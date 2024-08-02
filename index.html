@@ -34,7 +34,7 @@
   </head>
   <body>
     <!--Heder-->
-
+  
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -85,12 +85,21 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+       <svg
+        class="burger-icon"
+                width="24"
+                height="24"
+       >
+        <use href="./images/icons.svg#icon-burger"></use>
+       </svg>
+        </button>
       </div>
     </header>
     <main>
-      <!--1 Секція з кнопкою-->
-
-      <section class="button">
+    <!--1 Секція з кнопкою-->
+   
+      <section class="button hidden">
         <div class="container">
           <h1 class="button-title">Effective Solutions for Your Business</h1>
           <button
@@ -102,88 +111,89 @@
         </div>
       </section>
 
-      <!--2 Розділи переваги-->
+    <!--2 Розділи переваги-->
 
-      <section class="features">
-        <div class="container">
-          <h2
-            hidden
-            class="visually-hidden"
-          >
-            Features
-          </h2>
-          <ul class="features-list">
-            <li class="features-item">
-              <div class="block-icon">
-                <svg
-                  class="feature-icon"
-                  width="64"
-                  height="64"
-                >
-                  <use href="./images/icons.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h3 class="features-subtitle">Strategy</h3>
-              <p class="features-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li class="features-item">
-              <div class="block-icon">
-                <svg
-                  class="feature-icon"
-                  width="64"
-                  height="64"
-                >
-                  <use href="./images/icons.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <h3 class="features-subtitle">Punctuality</h3>
-              <p class="features-text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-            <li class="features-item">
-              <div class="block-icon">
-                <svg
-                  class="feature-icon"
-                  width="64"
-                  height="64"
-                >
-                  <use href="./images/icons.svg#icon-diagram"></use>
-                </svg>
-              </div>
-              <h3 class="features-subtitle">Diligence</h3>
-              <p class="features-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li class="features-item">
-              <div class="block-icon">
-                <svg
-                  class="feature-icon"
-                  width="64"
-                  height="64"
-                >
-                  <use href="./images/icons.svg#icon-astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="features-subtitle">Technologies</h3>
-              <p class="features-text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
+    <section class="features hidden">
+      <div class="container">
+        <h2
+          hidden
+          class="visually-hidden"
+        >
+          Features
+        </h2>
+        <ul class="features-list">
+          <li class="features-item">
+            <div class="block-icon">
+              <svg
+                class="feature-icon"
+                width="64"
+                height="64"
+              >
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+            </div>
+            <h3 class="features-subtitle">Strategy</h3>
+            <p class="features-text">
+              Our goal is to identify the business problem to walk away with the
+              perfect and creative solution.
+            </p>
+          </li>
+          <li class="features-item">
+            <div class="block-icon">
+              <svg
+                class="feature-icon"
+                width="64"
+                height="64"
+              >
+                <use href="./images/icons.svg#icon-clock"></use>
+              </svg>
+            </div>
+            <h3 class="features-subtitle">Punctuality</h3>
+            <p class="features-text">
+              Bring the key message to the brand's audience for the best price
+              within the shortest possible time.
+            </p>
+          </li>
+          <li class="features-item">
+            <div class="block-icon">
+              <svg
+                class="feature-icon"
+                width="64"
+                height="64"
+              >
+                <use href="./images/icons.svg#icon-diagram"></use>
+              </svg>
+            </div>
+            <h3 class="features-subtitle">Diligence</h3>
+            <p class="features-text">
+              Research and confirm brands that present the strongest digital
+              growth opportunities and minimize risk.
+            </p>
+          </li>
+          <li class="features-item">
+            <div class="block-icon">
+              <svg
+                class="feature-icon"
+                width="64"
+                height="64"
+              >
+                <use href="./images/icons.svg#icon-astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="features-subtitle">Technologies</h3>
+            <p class="features-text">
+              Design practice focused on digital experiences. We bring forth a
+              deep passion for problem-solving.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-      <!--3 Фото-->
+    <!--3 Фото-->
+ 
 
-      <section class="team">
+      <section class="team hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -478,10 +488,9 @@
           </ul>
         </div>
       </section>
-
-      <!--4-Our Portfolio-->
-
-      <section class="portfolio">
+    <!--4-Our Portfolio-->
+  
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -611,8 +620,8 @@
     </main>
 
     <!--Footer-->
-
-    <footer class="footer">
+   
+    <footer class="footer hidden">
       <div class="footer-container">
         <div class="footer-box">
           <a
@@ -725,8 +734,8 @@
     </footer>
 
     <!--Модальне вікно-->
-
-    <div class="backdrop is-open">
+   
+    <div class="backdrop hidden">
       <div class="modal">
         <button
           type="button"
@@ -863,6 +872,5 @@
           </button>
         </form>
       </div>
-    </div>
-  </body>
+    </div> 
 </html>
