@@ -559,9 +559,7 @@ gap: 24px;}
 /*--3-Foto--*/
 
 .container {
-    padding-top: 96px;
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-top: 96px 28px;
 }
 
 .team {
@@ -580,17 +578,20 @@ gap: 24px;}
     margin-bottom: 72px;
 }
 
+.team-list {
+    /*margin-bottom: 72px;*/
+}
+
 .team-list-item {
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
-
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     margin-bottom: 72px;
 }
 
 .team-name-container {
-    padding: 32px 0;
+padding: 32px 0;
 }
 
 .team-name {
@@ -649,14 +650,13 @@ gap: 24px;}
 @media screen and (min-width: 768px) {
 
 .container {
-        padding-left: 108px;
-        padding-right: 108px;
+        /*padding-left: 108px;
+        padding-right: 108px;*/
     }
 .team-list {
     display: flex;
     flex-wrap: wrap;
     gap: calc((100% - 24px) / 2);
-   
 }
 }
 
