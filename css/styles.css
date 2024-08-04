@@ -322,9 +322,7 @@ padding-top: 24px;
     padding-bottom: 24px;
 }
 
-.mobail-contacts-list {
-    
-}
+
 
 .mobail-contacts-item{
 margin-bottom: 24px;
@@ -462,10 +460,9 @@ url("../images/Dark-bg1x-min.jpg");
 /*-------Section 2------*/
 
 .features {
- 
+ padding-top: 96px;
     padding-bottom: 96px;
 }
-
 
 .visually-hidden {
     position: absolute;
@@ -515,16 +512,13 @@ position: relative;
 @media screen and (min-width: 768px) {
 
 .features-list {
-    display: flex;
-    flex-wrap: wrap;
-  /*gap: 24px;
-row-gap: 72px;*/
-    width: calc((100% - 24px) / 2);
-   }
+column-gap: 24px;
+row-gap: 72px; }
 
-   .features-item {
-   
+.features-item {
+width: calc((100% - 24px) / 2);
    }
+  
 }
 
 @media screen and (min-width: 1158px) {
@@ -555,13 +549,15 @@ gap: 24px;}
 .features-text { font-weight: 400;}
 }
 
-/*--3-Foto--*/
+
+/*---3-Foto---*/
 
 .team {
-    padding: 96px;
+    padding-top: 96px;
     padding-left: 28px;
     padding-right: 28px;
-        background-color: #F4F4FD;
+    padding-bottom: 96px;
+    background-color: #F4F4FD;
 }
 
 
@@ -578,7 +574,6 @@ gap: 24px;}
 
 .team-list {
     margin: 0 auto;
-    /*margin-bottom: 72px;*/
 }
 
 .team-list-item {
@@ -592,7 +587,7 @@ gap: 24px;}
 }
 
 .team-name-container {
-padding: 32px 0;
+padding: 32px 16px;
 }
 
 .team-name {
@@ -650,21 +645,31 @@ padding: 32px 0;
 
 @media screen and (min-width: 768px) {
 .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: calc((100% - 24px) / 2);
-}
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 24px;
+            row-gap: 64px;
+            flex-basis: calc((100% - 24px) / 2);
+        }
 
-}
+                .team-list-item{
+                    margin-bottom: 0;
+                }
+    }
+
 
 @media screen and (min-width: 1158px) {
 .team {
-       padding: 120px 156px;
+    padding-top: 120px;
     }
-        .team-list {
-            display: flex;
-            gap: 24px;
+ .team-list {
+ flex-wrap: nowrap;}
+
+ .team-list-item{
+ width: calc((100% - 3 * 24px) / 4);
         }
+
 }
 
 /*--4-Portfolio--*/
@@ -748,10 +753,12 @@ padding: 32px 0;
 }
 
 @media screen and (min-width: 768px) {
-.portfolio-list {
+.team-list {
     display: flex;
     flex-wrap: wrap;
-gap: 72px 24px;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 64px;
 flex-basis: calc((100% - 24px) / 2);
     }
 }
