@@ -519,12 +519,13 @@ position: relative;
 .features-list {
     display: flex;
     flex-wrap: wrap;
-  gap: 24px;
-row-gap: 72px;
+  /*gap: 24px;
+row-gap: 72px;*/
+    width: calc((100% - 24px) / 2);
    }
 
    .features-item {
-       width: calc((100% - 24px) / 2);   
+   
    }
 }
 
