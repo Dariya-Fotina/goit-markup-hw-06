@@ -1031,7 +1031,6 @@ text-align: start;
 .footer-container {
     max-width: 1158px;
     flex-wrap: nowrap;
-  padding-left: 28px;
    }
 .footer-logo {
     margin-bottom: 16px;
