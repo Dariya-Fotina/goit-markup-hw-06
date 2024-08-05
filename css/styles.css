@@ -1005,8 +1005,6 @@ text-align: start;
 .footer-form-cont {
     display: flex;
     flex-direction: column;
- 
-
 }
 .footer-form {
     display: flex;
