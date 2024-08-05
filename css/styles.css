@@ -604,6 +604,7 @@ gap: 24px;
 
 .team-list {
     margin: 0 auto;
+    padding-bottom: 96px;
 }
 
 .team-list-item {
@@ -613,8 +614,8 @@ gap: 24px;
     background: #fff;
     margin-bottom: 72px;
     padding: 0px 0px 32px 0px;
-        width: 264px;
-        height: 428px;
+    width: 264px;
+    height: 428px;
         }
 
 .team-name-container {
