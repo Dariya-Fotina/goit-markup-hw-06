@@ -1019,6 +1019,12 @@ text-align: start;
     width: 264px;
 }
 
+
+.footer-icon-soc {
+   display: block;
+}
+
+
 .footer-text-soc {
 text-align: start;
 }
@@ -1027,11 +1033,14 @@ text-align: start;
 @media screen and (min-width: 1158px) {
 .footer {
         padding: 100px 0;
+        
     }
 
 .footer-container {
     max-width: 1158px;
     flex-wrap: nowrap;
+    padding: 0 15px;
+    column-gap: 0;
    }
 .footer-logo {
     margin-bottom: 16px;
@@ -1046,8 +1055,10 @@ width: 264px;
 }
 
 .footer-icon-soc {
-       margin-right: 80px;
-   }
+    margin-right: 80px;
+}
+
+
 
 .footer-icon-link:hover,
 .footer-icon-link:focus {
