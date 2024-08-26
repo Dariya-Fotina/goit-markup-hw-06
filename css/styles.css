@@ -241,6 +241,7 @@ fill: #2f2f37;
         visibility: hidden;
         pointer-events: none;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 100;
 }
 
 .mobail-menu.is-open {
@@ -879,7 +880,7 @@ text-align: center;
 
 .footer-text {
 text-align: start;
-    font-size: 16px;
+font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
@@ -1077,7 +1078,6 @@ width: 264px;
     visibility: hidden;
     pointer-events: none;
     margin: 0 auto;
-    padding: 8px 16px;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1088,7 +1088,7 @@ width: 264px;
 }
 
 .modal {
-    width: 320px;
+    max-width: 288px;
     min-height: 640px;
     background: #fcfcfc;
     border-radius: 4px;
@@ -1098,7 +1098,7 @@ width: 264px;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
 }
 
 .close-button {
@@ -1148,7 +1148,6 @@ width: 264px;
     text-align: center;
     color: #2e2f42;
     margin-bottom: 16px;
-    padding-top: 48px;
 }
 
 .modal-field {
@@ -1160,9 +1159,12 @@ width: 264px;
 }
 
 .modal-label {
-    display: block;
+    display: flex;
+    align-items: center;
     line-height: 1.17;
     margin-bottom: 4px;
+    flex-shrink: 0;
+    width: 256px;
 }
 
 .modal-input {
@@ -1262,13 +1264,10 @@ width: 264px;
     align-items: center;
     justify-content: center;
     fill: transparent;
-   margin-right: 8px;
+   
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cub {
-    margin-left: 24px;
-}
 
 .modal-check:checked+.modal-check-text .yes {
     background-color: #404BBF;
@@ -1298,9 +1297,12 @@ width: 264px;
 
 @media screen and (min-width: 768px) {
 .modal {
-        width: 408px;
-        min-height: 584px;}
+        max-width: 408px;
+        min-height: 584px;
+    }
+
 }
+
 
 
 /*------------------- ---------------------*/
