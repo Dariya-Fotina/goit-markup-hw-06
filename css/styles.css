@@ -135,8 +135,6 @@ fill: #2f2f37;
 
 .contacts {
     font-style: normal;
-    padding-top: 24px;
-    padding-bottom: 24px;
   display: block;
 }
 
@@ -446,6 +444,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 768px) { 
 .button {
     padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hiro/people-of-pl.jpg");
 }  
 
@@ -491,7 +490,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 
 .features {
  padding-top: 96px;
-    padding-bottom: 96px;
+ padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -524,13 +523,13 @@ position: relative;
 }
 
 .features-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
-  text-align: center;
+  text-align: start;
 }
 
 .features-text {
@@ -551,7 +550,8 @@ row-gap: 72px;
 .features-item {
 width: calc((100% - 24px) / 2);
    }
-  
+
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -580,6 +580,12 @@ gap: 24px;
     justify-content: center;
 }
 
+.features-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;}
+
+
 .features-text { font-weight: 400;}
 }
 
@@ -588,6 +594,7 @@ gap: 24px;
 
 .team {
     padding-top: 96px;
+    padding-bottom: 96px;
     background-color: #F4F4FD;
 }
 
@@ -604,8 +611,10 @@ gap: 24px;
 }
 
 .team-list {
-    margin: 0 auto;
-    padding-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    margin: 0 auto;align-items: center;
 }
 
 .team-list-item {
@@ -613,10 +622,7 @@ gap: 24px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
-    margin-bottom: 72px;
-    padding: 0px 0px 32px 0px;
     width: 264px;
-    height: 428px;
         }
 
 .team-name-container {
@@ -679,6 +685,7 @@ padding: 32px 16px;
 @media screen and (min-width: 768px) {
 .team-list {
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
             column-gap: 24px;
@@ -786,6 +793,7 @@ padding: 32px 16px;
 @media screen and (min-width: 768px) {
 .portfolio-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
@@ -851,10 +859,11 @@ flex-basis: calc((100% - 2 * 24px) / 3);
   }
 
 .footer-container {
-    display: block;
-    align-items: baseline;
-    max-width: 320px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+   
 }
 
 .footer-box {
@@ -863,16 +872,18 @@ text-align: center;
 }
 
 .footer-logo {
+    font-weight: 700;
     font-size: 18px;
-    line-height: 117%;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
 }
 
 .footer-logo-color {
+    font-weight: 700;
     font-size: 18px;
-    line-height: 117%;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #F4F4FD;  
@@ -940,7 +951,7 @@ font-size: 16px;
 .footer-input {
     border: 1px solid #fff;
     border-radius: 4px;
-    width: 100%;
+    width: 288px;
     height: 40px;
     background: transparent;
     padding: 8px 16px;
@@ -983,6 +994,7 @@ font-size: 16px;
 @media screen and (min-width: 768px) {
 .footer-container {
         display: flex;
+        flex-direction: row;
         align-items: baseline;
         max-width: 768px;
         flex-wrap: wrap;
@@ -1088,7 +1100,7 @@ width: 264px;
 }
 
 .modal {
-    max-width: 288px;
+    width: 288px;
     min-height: 640px;
     background: #fcfcfc;
     border-radius: 4px;
@@ -1298,6 +1310,7 @@ width: 264px;
 .modal {
         max-width: 408px;
         min-height: 584px;
+        padding: 72px 24px 24px 24px;
     }
 
 }
