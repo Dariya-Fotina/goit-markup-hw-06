@@ -529,7 +529,7 @@ position: relative;
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
-  text-align: start;
+  text-align: center;
 }
 
 .features-text {
@@ -551,8 +551,11 @@ row-gap: 72px;
 width: calc((100% - 24px) / 2);
    }
 
-
+.features-subtitle {
+    text-align: start;
 }
+}
+
 
 @media screen and (min-width: 1158px) {
 .features {
@@ -566,7 +569,6 @@ justify-content: flex-start;
 flex-wrap: nowrap;
 gap: 24px;
 }
-
 
 .block-icon {
     display: flex;
